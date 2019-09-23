@@ -72,7 +72,7 @@
         >
         Passe o mouse sobre mim
     </span>
-    </article> -->
+    </article>
 
     <article>
         <h3>Two-way data binding</h3>
@@ -97,6 +97,15 @@
 
         </div>
 
+    </article> -->
+
+    <article>
+        <h3>Input/Output Properties</h3>
+
+        <app-curso [nome]="nomeDoCurso"></app-curso>
+
+        <contador [valor]="valorInicial"
+            (mudouValor)="onMudouValor($event)"></contador>
     </article>
 
 </section>
